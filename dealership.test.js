@@ -5,7 +5,7 @@ const Car = require('./Car');
 let dealership; //creating new dealership object
 let car;
 beforeEach(() => {
-    dealership = new Dealership("Fatimah's Dealership", );
+    dealership = new Dealership("Fatimah's Dealership");
     ferrariOne = new Car("Ferrari", 170000, "V8");
     ferrariTwo = new Car("Ferrari", 200000, "V9");
     bmw = new Car("BMW", 150000, "V6");
