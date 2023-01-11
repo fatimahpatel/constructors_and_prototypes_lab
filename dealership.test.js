@@ -41,6 +41,13 @@ describe('testing dealership', () => {
 
     });
 
+    test('can find all the cars from a given manufacturer', () => {
+        const expected = [ferrariOne, ferrariTwo];
+        const actual = dealership.allCarsFromOneManufacturer();
+        expect(actual).toStrictEqual(expected);
+
+    })
+
 
 
 

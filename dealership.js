@@ -4,6 +4,7 @@ const Dealership = function(name, maxCars){
     carStock = [];
 }
 
+
 Dealership.prototype.countCars = function(){
     return carStock.length;
 }
@@ -17,5 +18,11 @@ Dealership.prototype.carManufacturers = function(){
     carStock.forEach((Car) => manufacturers.push(Car["manufacturer"]));
     return manufacturers;
 }
+
+Dealership.prototype.allCarsFromOneManufacturer = function(){
+    const sameManufacturer = carStock.filter((Car) => Car.manufacturer === "Ferrari");
+    return sameManufacturer;
+}
+
 
 module.exports = Dealership;
