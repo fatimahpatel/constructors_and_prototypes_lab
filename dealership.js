@@ -24,5 +24,13 @@ Dealership.prototype.allCarsFromOneManufacturer = function(){
     return sameManufacturer;
 }
 
+Dealership.prototype.totalValueOfAllCars = function (){
+    const totalOfAllCars = carStock.reduce((reducer, Car) => reducer + Car.price, 0);
+    return totalOfAllCars;
+
+}
+
+
+
 
 module.exports = Dealership;

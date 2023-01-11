@@ -48,7 +48,11 @@ describe('testing dealership', () => {
 
     })
 
-
+    test('can find the total value of all cars in stock', () => {
+        const expected = 520000;
+        const actual = dealership.totalValueOfAllCars();
+        expect(actual).toBe(expected);
+    })
 
 
 })
