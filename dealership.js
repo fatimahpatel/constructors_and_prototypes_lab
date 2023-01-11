@@ -9,6 +9,23 @@ Dealership.prototype.countCars = function(){
     return carStock.length;
 }
 
+// Dealership.prototype.addCarToStock = function(newCar){
+//     if (carStock.length <= maxCars){
+//         carStock.push(newCar);
+//     }
+    
+// }
+
+// Dealership.prototype.addCarToStock = function(newCar){
+//         if (carStock.length <= maxCars){
+//             carStock.push(newCar)
+//             return true;
+//         } else{
+//             return false;
+//         }
+        
+//     }
+
 Dealership.prototype.addCarToStock = function(newCar){
     carStock.push(newCar);
 }

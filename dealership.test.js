@@ -3,9 +3,11 @@ const Car = require('./Car');
 
 
 let dealership; //creating new dealership object
-let car;
+let ferrariOne;
+let ferrariTwo;
+let bmwTwo;
 beforeEach(() => {
-    dealership = new Dealership("Fatimah's Dealership");
+    dealership = new Dealership("Fatimah's Dealership", 3);
     ferrariOne = new Car("Ferrari", 170000, "V8");
     ferrariTwo = new Car("Ferrari", 200000, "V9");
     bmw = new Car("BMW", 150000, "V6");
@@ -33,6 +35,15 @@ describe('testing dealership', () => {
         const actual = carStock.includes(ferrariOne);
         expect(actual).toBe(expected);
     });
+
+    // test('Cannot add any more cars', () => {
+    //     bmwTwo = new Car ("BMW", 130000, "V4");
+    //     dealership.addCarToStock(bmwTwo)
+    //     const expected = false;
+    //     const actual = dealership.addCarToStock(bmwTwo);
+    //     expect(actual).toBe(expected);
+
+    // })
 
     test('can return an array containing each cars manufacturer', () => {
         const expected = ["Ferrari", "Ferrari", "BMW"];
