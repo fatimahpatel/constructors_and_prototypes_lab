@@ -3,3 +3,5 @@ const Dealership = function(name, maxCars, carsInStock){
     this.maxCars = maxCars;
     this.carsInStock = carsInStock;
 }
+
+module.exports = Dealership;
