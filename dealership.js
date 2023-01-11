@@ -12,5 +12,10 @@ Dealership.prototype.addCarToStock = function(newCar){
     carStock.push(newCar);
 }
 
+Dealership.prototype.carManufacturers = function(){
+    manufacturers = [];
+    carStock.forEach((Car) => manufacturers.push(Car["manufacturer"]));
+    return manufacturers;
+}
 
 module.exports = Dealership;
