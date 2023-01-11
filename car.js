@@ -4,4 +4,4 @@ const Car = function(manufacturer, price, engineType){
     this.engineType = engineType;
 };
 
-module.exports = Car;
+module.exports = Car; //need to do this if we want to access Car in other files

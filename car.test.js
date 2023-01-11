@@ -21,4 +21,10 @@ describe('testing Car', () => {
 
     })
 
+    test('Can return engineType', () => {
+        const expected = "V8";
+        const actual = car["engineType"];
+        expect(actual).toBe(expected);
+    })
+
 })
